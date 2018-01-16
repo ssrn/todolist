@@ -1,0 +1,26 @@
+li {
+  position: relative;
+}
+
+.todo--completed {
+  text-decoration: line-through;
+}
+
+.todo--completed:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  display: inline-block;
+  height: 15px;
+  width: 7px;
+  padding-right: 5px;
+  border-color: limegreen;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.close {
+  margin-left: 20px;
+}
